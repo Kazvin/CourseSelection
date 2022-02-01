@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="646.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.FXML.AddCourseController">
+   <children>
+      <Label alignment="CENTER" layoutX="28.0" layoutY="23.0" text="Available Courses" textAlignment="CENTER">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TableView fx:id="coursesDisplay" layoutX="13.0" layoutY="87.0" prefHeight="289.0" prefWidth="613.0">
+        <columns>
+          <TableColumn fx:id="code" prefWidth="75.0" text="Course Code" />
+          <TableColumn fx:id="name" prefWidth="75.0" text="Name" />
+            <TableColumn fx:id="desc" prefWidth="75.0" text="Description" />
+            <TableColumn fx:id="sTime" prefWidth="75.0" text="Start Time" />
+            <TableColumn fx:id="eTime" prefWidth="75.0" text="End Time" />
+            <TableColumn fx:id="prof" prefWidth="75.0" text="Prof" />
+            <TableColumn fx:id="sDate" prefWidth="75.0" text="Start Date" />
+            <TableColumn fx:id="eDate" prefWidth="75.0" text="End Date" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <Button layoutX="574.0" layoutY="26.0" mnemonicParsing="false" onAction="#backAction" text="Back" />
+      <Button layoutX="281.0" layoutY="374.0" mnemonicParsing="false" onAction="#addCourseAction" text="Add Course" />
+      <Text fx:id="message" fill="#ff0606" layoutX="28.0" layoutY="73.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
