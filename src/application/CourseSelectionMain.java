@@ -9,7 +9,7 @@ import javafx.stage.Stage;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 
-public class Main extends Application {
+public class CourseSelectionMain extends Application {
 	@Override
 	public void start(Stage primaryStage) {
 		try {
